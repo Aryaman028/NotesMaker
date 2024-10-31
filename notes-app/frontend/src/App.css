@@ -1,0 +1,174 @@
+/* Navbar styles */
+.navbar {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  background-color: #6f86fd;
+  padding: 20px 40px; /* Increased padding */
+  position: fixed;
+  top: 0;
+  left: 0;
+  right: 0;
+  z-index: 1000;
+}
+
+.navbar .logo {
+  font-size: 32px; /* Increased font size */
+  font-weight: bold;
+  color: white;
+}
+
+.navbar input[type="text"] {
+  padding: 12px; /* Increased padding */
+  border: none;
+  border-radius: 6px;
+  width: 400px; /* Increased width */
+  box-sizing: border-box;
+  outline: none;
+}
+
+.navbar input[type="text"]::placeholder {
+  color: #999;
+}
+
+.navbar input[type="text"]:focus {
+  border: 2px solid #4caf50;
+}
+
+/* Adjust the body to give space for the fixed navbar */
+body {
+  margin: 0;
+  padding-top: 80px; /* Increased space for the navbar */
+}
+
+/* Container for the app content */
+.container {
+  max-width: 1100px; /* Increased max-width */
+  margin: 0 auto;
+  padding: 40px; /* Increased padding */
+}
+
+/* Logo hover effect */
+.navbar .logo:hover {
+  color: #4caf50;
+  cursor: pointer;
+}
+
+/* Styling for the note form card */
+.note-card {
+  background-color: white;
+  padding: 35px; /* Increased padding */
+  margin-bottom: 40px; /* Increased margin */
+  border-radius: 12px;
+  box-shadow: 0 6px 12px rgba(0, 0, 0, 0.15);
+  max-width: 800px; /* Increased max-width */
+  margin: 40px auto; /* Increased margin */
+}
+
+.note-card h2 {
+  margin-top: 0;
+  font-size: 30px; /* Increased font size */
+  color: #333;
+}
+
+.note-card input[type="text"],
+.note-card textarea {
+  width: 100%;
+  padding: 18px; /* Increased padding */
+  margin: 18px 0; /* Increased margin */
+  border: 1px solid #ccc;
+  border-radius: 6px;
+  box-sizing: border-box;
+  font-size: 18px; /* Increased font size */
+}
+
+.note-card button {
+  background-color: #4caf50;
+  color: white;
+  padding: 14px 20px; /* Increased padding */
+  margin-right: 14px; /* Increased margin */
+  border: none;
+  border-radius: 6px;
+  font-size: 16px; /* Increased font size */
+  cursor: pointer;
+  transition: background-color 0.3s;
+}
+
+.note-card button:hover {
+  background-color: #45a049;
+}
+
+.note-card button.update-btn {
+  background-color: #2196f3;
+}
+
+.note-card button.update-btn:hover {
+  background-color: #1976d2;
+}
+
+/* Grid layout for notes */
+.notes-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fill, minmax(350px, 1fr)); /* Adjusted for responsive 3-column layout */
+  gap: 40px; /* Increased gap */
+  margin-top: 40px; /* Increased margin */
+}
+
+/* Styling for each note card */
+.note-card {
+  background-color: white;
+  padding: 35px; /* Increased padding */
+  border-radius: 12px;
+  box-shadow: 0 6px 12px rgba(0, 0, 0, 0.15);
+  transition: transform 0.2s ease;
+}
+
+.note-card:hover {
+  transform: translateY(-5px);
+}
+
+.note-card h3 {
+  margin-top: 0;
+  font-size: 26px; /* Increased font size */
+  color: #333;
+}
+
+.note-card p {
+  color: #555;
+  font-size: 25px; /* Increased font size */
+  margin-bottom: 20px;
+}
+
+/* Styling for buttons inside each note card */
+.note-card button {
+  padding: 14px 20px; /* Increased padding */
+  margin-right: 14px;
+  background-color: #4caf50;
+  color: white;
+  border: none;
+  border-radius: 6px;
+  font-size: 16px; /* Increased font size */
+  cursor: pointer;
+  transition: background-color 0.3s ease;
+}
+
+.note-card button:hover {
+  background-color: #45a049;
+}
+
+/* Edit button */
+.note-card .edit-btn {
+  background-color: #2196f3;
+}
+
+.note-card .edit-btn:hover {
+  background-color: #1976d2;
+}
+
+/* Delete button */
+.note-card .delete-btn {
+  background-color: #f44336;
+}
+
+.note-card .delete-btn:hover {
+  background-color: #d32f2f;
